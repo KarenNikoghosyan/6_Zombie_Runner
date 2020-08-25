@@ -7,18 +7,22 @@ using UnityEngine.AI;
 public class EnemyAI : MonoBehaviour
 {
     [SerializeField] Transform target;
-    NavMeshAgent navMeshAgent;
+    [SerializeField] float chaseRange = 7f;
 
-    // Start is called before the first frame update
+    NavMeshAgent navMeshAgent;
+    float distanceToTarget = Mathf.Infinity;
+
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        navMeshAgent.SetDestination(target.position);
+        distanceToTarget = Vector3.Distance(target.position, gameObject.transform.position);
+        if (distanceToTarget <= chaseRange) {
+            navMeshAgent.SetDestination(target.position);
+        }
     }
 
 }
