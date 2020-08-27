@@ -2118,25 +2118,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 44884af1ac1d64d42902da40268ba120, type: 3}
   m_PrefabInstance: {fileID: 933754363}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1023921402 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6810144383282368391, guid: 6111940be42cb684d8a0e84786526ff3, type: 3}
-  m_PrefabInstance: {fileID: 6810144384650499502}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1023921404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1023921402}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c462167a4b9e96439e3f58cf0822be8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FPCamera: {fileID: 1670812273}
-  range: 100
 --- !u!4 &1076920787 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5862bbfe91a75054ca72c13b555b6ac5, type: 3}
@@ -3640,11 +3621,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 44884af1ac1d64d42902da40268ba120, type: 3}
   m_PrefabInstance: {fileID: 1632841908}
-  m_PrefabAsset: {fileID: 0}
---- !u!20 &1670812273 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 6810144383284852304, guid: 6111940be42cb684d8a0e84786526ff3, type: 3}
-  m_PrefabInstance: {fileID: 6810144384650499502}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1676438012
 PrefabInstance:
@@ -5727,6 +5703,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 947398494601136917, guid: 90b2127dd0efaac4fa8b9e552a1f1869, type: 3}
+      propertyPath: hitPoints
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 5052362225390002221, guid: 90b2127dd0efaac4fa8b9e552a1f1869, type: 3}
       propertyPath: target
       value: 
@@ -5774,6 +5754,10 @@ PrefabInstance:
     - target: {fileID: 5052362225390002222, guid: 90b2127dd0efaac4fa8b9e552a1f1869, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052362225390002258, guid: 90b2127dd0efaac4fa8b9e552a1f1869, type: 3}
+      propertyPath: m_Speed
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5052362225390002259, guid: 90b2127dd0efaac4fa8b9e552a1f1869, type: 3}
       propertyPath: m_Name
