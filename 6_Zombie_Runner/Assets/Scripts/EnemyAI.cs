@@ -56,7 +56,7 @@ public class EnemyAI : MonoBehaviour
     private void AttackTarget()
     {
         GetComponent<Animator>().SetBool("attack", true);
-        print("The " + name + " is killed the " + target.name + " :'(");
+        //print("The " + name + " is killed the " + target.name + " :'(");
     }
 
     private void OnDrawGizmosSelected()

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5052362225390002258}
   - component: {fileID: 947398494601136917}
   - component: {fileID: 5052362225390002221}
+  - component: {fileID: 8206241779659390575}
   - component: {fileID: 1835023086788484551}
   m_Layer: 0
   m_Name: Enemy
@@ -151,6 +152,20 @@ MonoBehaviour:
   target: {fileID: 0}
   chaseRange: 15
   attackRange: 2
+--- !u!114 &8206241779659390575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5052362225390002259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b54108ace457fc42b4f88d15eb4785d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  damage: 25
 --- !u!95 &1835023086788484551
 Animator:
   serializedVersion: 3
