@@ -393,6 +393,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zoomedOutFOV: 60
   zoomedInFOV: 25
+  zoomOutSensitivity: 2
+  zoomInSensitivity: 0.5
 --- !u!1 &6810144383330464684
 GameObject:
   m_ObjectHideFlags: 0
