@@ -30,6 +30,7 @@ GameObject:
   - component: {fileID: 6810144383283079792}
   - component: {fileID: 6810144383277711766}
   - component: {fileID: 6810144383278738456}
+  - component: {fileID: 2106817321}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -185,6 +186,37 @@ Behaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6810144383284786292}
   m_Enabled: 1
+--- !u!114 &2106817321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6810144383284786292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &6810144383284786294
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,6 +231,7 @@ GameObject:
   - component: {fileID: 6810144383277711764}
   - component: {fileID: 1059215800}
   - component: {fileID: 8021510759890052606}
+  - component: {fileID: 1152308837}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -270,7 +303,7 @@ MonoBehaviour:
     StrafeSpeed: 4
     RunMultiplier: 2
     RunKey: 304
-    JumpForce: 55
+    JumpForce: 50
     SlopeCurveModifier:
       serializedVersion: 2
       m_Curve:
@@ -346,6 +379,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverCanvas: {fileID: 0}
+--- !u!114 &1152308837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6810144383284786294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0be0647ad8ff2944bb6278f1827b8ca9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoomedOutFOV: 60
+  zoomedInFOV: 25
 --- !u!1 &6810144383330464684
 GameObject:
   m_ObjectHideFlags: 0
