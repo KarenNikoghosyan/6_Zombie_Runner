@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[ExecuteInEditMode]
 public class GifTexture : MonoBehaviour
 {
-    [SerializeField] private float tileX = 1;
-    [SerializeField] private float tileY = 1;
+    [SerializeField] private float tileX = 1f;
+    [SerializeField] private float tileY = 1f;
     Mesh mesh;
     private Material mat;
 
