@@ -4533,6 +4533,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5616329589605020320, guid: 6111940be42cb684d8a0e84786526ff3, type: 3}
+      propertyPath: currentWeapon
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6810144383284291666, guid: 6111940be42cb684d8a0e84786526ff3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -80.3
