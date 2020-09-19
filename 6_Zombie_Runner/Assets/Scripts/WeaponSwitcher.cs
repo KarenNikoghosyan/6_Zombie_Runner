@@ -44,17 +44,6 @@ public class WeaponSwitcher : MonoBehaviour
     {
         if (Input.GetAxis("Mouse ScrollWheel") > 0)
         {
-            if (currentWeapon >= transform.childCount - 1)
-            {
-                currentWeapon = 0;
-            }
-            else
-            {
-                currentWeapon++;
-            }
-        }
-        if (Input.GetAxis("Mouse ScrollWheel") < 0)
-        {
             if (currentWeapon <= 0)
             {
                 currentWeapon = transform.childCount - 1;
@@ -64,11 +53,37 @@ public class WeaponSwitcher : MonoBehaviour
                 currentWeapon--;
             }
         }
+        if (Input.GetAxis("Mouse ScrollWheel") < 0)
+        {
+            if (currentWeapon >= transform.childCount - 1 )
+            {
+                currentWeapon = 0;
+            }
+            else
+            {
+                currentWeapon++;
+            }
+        }
     }
 
     private void SetWeaponActive()
     {
         int weaponIndex = 0;
+
+        // 0 1 2 ---- currentWeapon = 2
+        /*
+        for (int i = 0; i < transform.childCount; i++) {
+
+            if (currentWeapon == i) {
+                transform.GetChild(i).gameObject.SetActive(true);
+            }
+            else { 
+                transform.GetChild(i).gameObject.SetActive(false);
+            }
+
+        }
+        */
+
         foreach (Transform weapon in transform)
         {
             if(weaponIndex == currentWeapon)
