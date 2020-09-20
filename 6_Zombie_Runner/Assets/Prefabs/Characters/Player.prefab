@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0be0647ad8ff2944bb6278f1827b8ca9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fpsController: {fileID: 0}
+  fpsController: {fileID: 6810144383277711764}
   zoomedOutFOV: 60
   zoomedInFOV: 30
   zoomOutSensitivity: 2
@@ -477,7 +477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0be0647ad8ff2944bb6278f1827b8ca9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fpsController: {fileID: 0}
+  fpsController: {fileID: 6810144383277711764}
   zoomedOutFOV: 60
   zoomedInFOV: 25
   zoomOutSensitivity: 2
@@ -580,7 +580,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5463443614362762079, guid: 081eb52175115c8458d1c7228095cd6b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 081eb52175115c8458d1c7228095cd6b, type: 3}
@@ -607,7 +607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5125476990884334650, guid: f4bc74a5e1ac80244ae7d79961f960cf, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5131304230989900364, guid: f4bc74a5e1ac80244ae7d79961f960cf, type: 3}
       propertyPath: m_LocalPosition.x
