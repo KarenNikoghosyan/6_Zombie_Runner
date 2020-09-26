@@ -234,7 +234,7 @@ GameObject:
   - component: {fileID: 3038251796115663438}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -459,7 +459,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FPCamera: {fileID: 6810144383284852304}
   range: 20
-  damage: 35
+  damage: 50
   muzzleFlash: {fileID: 7237815473237984874}
   hitEffect: {fileID: 1595216832611821935, guid: 1891f6669dd153241b72273240ee93f5, type: 3}
   ammoSlot: {fileID: 3038251796115663438}
