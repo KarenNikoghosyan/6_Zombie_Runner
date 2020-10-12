@@ -4,13 +4,18 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-    PlayerHealth target;
     [SerializeField] float damage = 25f;
 
-    // Start is called before the first frame update
+    PlayerHealth target;
+    DisplayDamage hpBar, bloodSplash;
+
+    bool isHit = true;
+
     void Start()
     {
         target = FindObjectOfType<PlayerHealth>();
+        hpBar = FindObjectOfType<DisplayDamage>();
+        bloodSplash = FindObjectOfType<DisplayDamage>();
     }
     public void AttackHitEvent()
     {
@@ -18,7 +23,8 @@ public class EnemyAttack : MonoBehaviour
         else
         {
             target.TakeDamage(damage);
-            print("A zombie is attacking you... run you fool...");
+            hpBar.HealthBar(damage);
+            bloodSplash.BloodSplash(isHit);
         }
     }
 }
